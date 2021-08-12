@@ -17,10 +17,12 @@
     z-index: 5;
     .navbar {
         background: linear-gradient(to bottom, $pastel, $rosa);
-        .logo {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
+        .navbar-toggler {
+            padding: 2px 5px;
+            // border: none;
+            .navbar-toggler-icon {
+                width: 22px;
+            }
         }
         .navbar-nav {
             .nav-item {
@@ -29,8 +31,7 @@
                     color: white;
                     font-family: $Bebas;
                     padding: 0px 5px 0px 5px;
-                    margin: auto;
-                    margin: 0px 5px;
+                    margin: 5px 5px;
                     letter-spacing: 0.5px;
                 }
                 .nav-link:hover {
@@ -193,6 +194,7 @@ aside {
             border: solid $borde 3px;
             border-radius: 5px;
             position:relative;
+            padding: 10px;
         }
     }
 }

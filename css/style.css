@@ -12,17 +12,16 @@
   z-index: 5; }
   .navegador .navbar {
     background: linear-gradient(to bottom, #ebd5b5, pink); }
-    .navegador .navbar .logo {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%; }
+    .navegador .navbar .navbar-toggler {
+      padding: 2px 5px; }
+      .navegador .navbar .navbar-toggler .navbar-toggler-icon {
+        width: 22px; }
     .navegador .navbar .navbar-nav .nav-item .nav-link {
       text-decoration: none;
       color: white;
       font-family: "Bebas Neue", cursive;
       padding: 0px 5px 0px 5px;
-      margin: auto;
-      margin: 0px 5px;
+      margin: 5px 5px;
       letter-spacing: 0.5px; }
     .navegador .navbar .navbar-nav .nav-item .nav-link:hover {
       background-color: #cfa9a9;
@@ -181,7 +180,8 @@ aside .contentAside {
     background-color: white;
     border: solid #f1efef 3px;
     border-radius: 5px;
-    position: relative; }
+    position: relative;
+    padding: 10px; }
 
 .parrafo__contenedor:before {
   content: "";
