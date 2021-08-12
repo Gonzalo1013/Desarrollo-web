@@ -62,7 +62,7 @@ header .tituloIndex .sub-titulo {
   letter-spacing: 1px;
   color: #383636; }
 
-header .d-block {
+.d-block {
   height: 150px;
   margin-top: 20px; }
 
@@ -401,7 +401,7 @@ aside .contentAside {
 /*--------------------------------------------------------- MEDIA QUERIS -------------------------------------------------------------*/
 @media only screen and (min-width: 576px) {
   /*-------------------------------QUERY CARROUSEL------------------------*/
-  header .d-block {
+  .d-block {
     height: 300px; }
   /*---------------------------------QUERY MAIN---------------------------*/
   main .mainIndexFlex figure .imagenesMainOne {
@@ -482,7 +482,7 @@ aside .contentAside {
 /*--------------------------------------------------------Segundo breakpoint----------------------------------------------------*/
 @media only screen and (min-width: 768px) {
   /*----------------QUERY CARROUSEL---------*/
-  header .d-block {
+  .d-block {
     height: 350px; }
   /*----------------QUERY MAIN--------------------*/
   main .mainIndexFlex {
