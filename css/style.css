@@ -249,10 +249,12 @@ aside .contentAside {
       display: flex;
       flex-direction: column;
       font-family: "MonteCarlo", cursive;
+      justify-content: center;
       margin: auto; }
       .bodyPrecios .mainPrecios .tablaPrecios thead {
         border: solid #f1efef 4px;
-        margin-top: 5px; }
+        width: 170px;
+        margin: 5px auto; }
         .bodyPrecios .mainPrecios .tablaPrecios thead .subtitulo_precios {
           text-decoration: underline;
           font-family: "Josefin Sans";
