@@ -1,0 +1,639 @@
+@import "base/colores.scss";
+@import "base/fuentes.scss";
+@import "base/mixin.scss";
+
+
+.bodyIndex {
+    background-color: $fondo;
+    margin: auto;
+    max-width: 1000px;
+}
+
+/*------------------------------------------------------------ HEADER ---------------------------------------------------------*/
+.navegador {
+    position: sticky;
+    top: 0px;
+    width:  1000px;
+    z-index: 5;
+    .navbar {
+        background: linear-gradient(to bottom, $pastel, $rosa);
+        .logo {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $Bebas;
+                    padding: 0px 5px 0px 5px;
+                    margin: auto;
+                    margin: 0px 5px;
+                    letter-spacing: 0.5px;
+                }
+                .nav-link:hover {
+                    background-color: $gris;
+                    border-radius: 3px;
+                    padding: 0px 5px;
+                }
+            }
+        }
+    }
+}
+.dropdown{
+    .dropdown-menu{
+        background-color: $rosa;
+        .dropdown-item {
+            color: white;
+            font-family: $Bebas;
+            padding: 0% 0% 0% 5px;
+        }
+        .dropdown-item:hover {
+            background-color: $gris;
+        }
+    }
+}
+header {
+    .content-logo {
+        text-align: center;
+        margin-top: 5px;
+        .logo-principal {
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+        }
+    }
+    .tituloIndex{
+        .titulo {
+            @include titulos;
+        }
+        .sub-titulo{
+            @include subtitulos;
+        }
+    }
+    .d-block {
+        height: 150px;
+        margin-top: 20px;
+    }
+}
+/*------------------------------------------------------------ MAIN -----------------------------------------------------------*/
+main{
+    .mainIndexFlex {
+        text-align: center;
+        margin-top: 40px;
+        figure{
+            margin: 0%;
+            .imagenesMainOne {
+                @include imagenes;
+                border-radius: 5px 5px 0px 0px;
+            }
+            .imagenesMainTwo {
+                @include imagenes;
+            }
+            .imagenesMainThree {
+                @include imagenes;
+                border-radius: 0px 0px 5px 5px;
+            }
+        }
+    }
+}
+.imagenesMainOne:hover{
+    transform: scale(1.2);
+}
+.imagenesMainTwo:hover {
+    transform: scale(1.2)
+}
+.imagenesMainThree:hover {
+    transform: scale(1.2)
+}
+
+/*------------------------------------------------------------ ASIDE ----------------------------------------------------------*/
+aside {
+    .contentAside{
+        margin-top: 30px;
+        .InvertiPagosRedes {
+            margin-top: 20px;
+            .asideTitulos {
+                @include subtitulosh6;
+                max-width: 200px;
+                margin: auto;
+            }
+            p{
+                @include parrafos;
+                max-width: 200px;
+                margin: auto;
+            }
+            .imagenMediosDePago{
+                text-align: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 10px 10px;
+                }
+            }
+            .siguenosRedes{
+                display: flex;
+                justify-content: center;
+                .redesLogo {
+                    margin: 10px 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        hr {
+            width: 100px;
+            height: 3px;
+            margin: auto;
+            margin-top: 20px;
+            border-style: none;
+            background: linear-gradient(to left, red, blue, green);
+        }
+    }
+}
+/*------------------------------------------------------------ SECTION --------------------------------------------------------*/
+.parrafo {
+    .parrafo__contenedor{
+        background-image: url(https://p1.pxfuel.com/preview/441/161/272/rose-background-beautiful-beauty.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no repeat;
+        text-align: center;
+        border: solid white 5px;
+        border-radius: 5px;
+        div {
+            max-width: 150px;
+            margin: auto;
+        }
+        .parrafo__pauConi {
+            margin-top: 20px;
+            font-family: $josefin;
+            font-weight: 300;
+            text-decoration: underline;
+            font-size: 1.5em;
+            background-color: white ;
+            border: solid $borde 3px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .parrafo__juventud {
+            font-family: $Reem;
+            background-color: white ;
+            border: solid $borde 3px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .parrafo__nuestraHistoria {
+            @include parrafos;
+            background-color: white ;
+            border: solid $borde 3px;
+            border-radius: 5px;
+            position:relative;
+        }
+    }
+}
+.parrafo__contenedor:before{
+    content:"";
+    padding: 0px 995px 500px 0px;
+    height: 50vh;
+    background: white;
+    opacity: 0.4;
+    border-radius: 4px;
+}
+/*------------------------------------------------------------ FOOTER ---------------------------------------------------------*/
+.footer{
+    font-family: sans-serif;
+    background-color: #202020 ;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    .footer__col{
+        // border: solid white;
+        h6 {
+            font-size: 0.8em;
+        }
+        padding: 10px;
+        img  {
+            height: 25px;
+            width: 25px;
+            background: white;
+            padding: 3px 5px;
+            border-radius: 3px;
+        }
+        .content-label {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            label {
+                
+                margin-left: 15px;
+                color: grey;
+                max-width: 150px;
+                font-size: 0.6em;
+            }
+        }
+    }
+}
+.information {
+    padding: 10px;
+    background-color: #202020 ;
+    color: grey;
+    box-shadow: 2px 2px 5px grey;
+    font-size: 0.6em;
+}
+/*-------------------------------------------------------------Pages-Presios---------------------------------------------------*/
+.bodyPrecios {
+    margin: auto;
+    max-width: 1000px;
+    background-color: $fondo;
+    .titulo_precios{
+        text-align: center;
+        @include titulos;
+        margin-top: 20px;
+    }
+    .mainPrecios{
+        margin-top: 40px;
+        padding: 20px;
+        background-image: url(https://www.teahub.io/photos/full/14-145357_flower-background-wallpaper-hd-flower-background-design-hd.jpg);
+        background-repeat: no-repeat;
+        background-size: 1000px 900px;
+        .tablaPrecios{
+            font-family: $Monte;
+            margin: auto;
+            thead{
+                border: solid $borde 4px;
+                margin-top: 20px;
+                .subtitulo_precios{
+                    text-decoration: underline;
+                    font-family: $josefin;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }    
+}
+    
+/*------------------------------------------------------------Page-Productos----------------------------------------------------*/
+.bodyProductos {
+    max-width: 1000px;
+    margin: auto;
+    background-color: $fondo;
+    .mainProductos{
+        margin-top: 30px;
+        .subProductos {
+            @include titulos;
+            margin-bottom: 50px;
+        }
+        .content_left {
+            .content_productos {
+                text-align: center;
+                border: 3px $rosa solid;
+                margin: 15px;
+                figure {
+                    margin: 10px;
+                    border: 5px white solid;
+                    .content_img {
+                        // border: solid black;
+                        margin: 10px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                    figcaption {
+                        @include parrafos;
+                        margin: 10px;
+                        padding: 20px;
+                        text-justify: distribute;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+        .content_right {
+            display: flex;
+            flex-direction: row-reverse;
+            .content_productos {
+                text-align: center;
+                border: 3px $rosa solid;
+                margin: 15px;
+                figure {
+                    margin: 10px;
+                    border: 5px white solid;
+                    .content_img {
+                        // border: solid black;
+                        margin: 10px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                    figcaption {
+                        @include parrafos;
+                        margin: 10px;
+                        padding: 20px;
+                        text-justify: distribute;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+/*------------------------------------------------------------Page-Contactos----------------------------------------------------*/
+.bodyContactos {
+    max-width: 1000px;
+    margin: auto;
+    background-color: $fondo;
+    .container_contactos {
+        max-width: 500px;
+        margin: auto;
+        margin-top: 30px;
+        border: solid $rosa;
+        .titulo_contactos {
+            @include titulos;
+            margin-top: 10px;
+        }
+        .form_contactos {
+            font-family: $josefin;
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            .form-label {
+                font-size: 0.7em;
+                text-align: center;
+            }
+            .form-control {
+                font-size: 0.7em;
+            }
+            .form-select {
+                font-size: 0.7em;
+            }
+            .form-check {
+                font-size: 0.7em;
+            }
+            .boton_btn {
+                text-align: center;
+                .btn {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+}
+/*-----------------------------------------------------Page-Uñas-Pestañas-Peluqueria-----------------------------------------------*/
+.mainTrabajos {
+    margin-top: 30px;
+    .titulo-trabajos {
+        h6 {
+        @include titulos;
+        }
+    }
+    .uñas {
+        .Uñas__imagenes {
+            margin: 15px;
+            text-align: center;
+            img {
+                width: 200px;
+                height: 200px;
+                border: solid white 4px;
+                box-shadow: $rosa 2px 2px 5px;
+            }
+        }
+    }
+            
+            // transition: 0.3s ease-in-out 0.2s;
+    // .Uñas__imagenes img:hover {
+    //     transform: scale(1.1);
+    // }
+}
+/* -------------------------------------------------------------ERROR-404---------------------------------------------------------*/
+.body404 {
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container-error404 {
+        text-align: center;
+        width: 200px;
+        background-color: $fondo;
+        padding: 15px;
+        box-shadow: 2px 2px 5px;
+        border-radius: 5px;
+        font-family: $Didact;
+        font-size: 0.7em;
+        line-height: 1.7;
+        margin: 10px;
+        // border: solid black;
+        .link-404 {
+            display: inline-block;
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            // margin-top: 10px;
+        }
+    }
+}
+/*--------------------------------------------------------- MEDIA QUERIS -------------------------------------------------------------*/
+@media only screen and (min-width: 576px){
+    /*-------------------------------QUERY CARROUSEL------------------------*/
+    header {
+        .d-block {
+            height: 300px;
+        }
+    }
+    /*---------------------------------QUERY MAIN---------------------------*/
+    main{
+        .mainIndexFlex{
+            figure {
+                .imagenesMainOne{
+                    width: 200px;
+                    height: 150px;
+                }
+                .imagenesMainTwo{
+                    width: 200px;
+                    height: 150px;
+                }
+                .imagenesMainThree{
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    /*-------------------------------QUERY SECCTION--------------------------*/
+    .parrafo {
+        .parrafo__contenedor{
+            width: 100%;
+            div {
+                max-width: 250px;
+                margin: auto;
+                // border: solid black;
+            }
+            .parrafo__pauConi {
+                padding: 10px;
+            }
+            .parrafo__juventud {
+                padding: 10px;
+            }
+            .parrafo__nuestraHistoria {
+                padding: 10px;
+            }
+        }
+    }
+    .parrafo__contenedor:before{
+        content:"";
+        padding: 0px 995px 400px 0px;
+    }
+    /*------------------------------QUERY FOOTER-------------------------------*/
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .information{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*--------------------------QUERY PAGE PRECIOS ----------------------------*/
+    .bodyPrecios {
+        .titulo_precios{
+            h6 {
+                font-size: 1.4em;
+            }
+        }
+        .mainPrecios{
+            .tablaPrecios{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }    
+    }
+    /*-----------------------------QUERY PAGES DE TRABAJOS -------------------*/
+    .mainTrabajos {
+        .titulo-trabajos {
+            h6 {
+            font-size: 1.4em;
+            }
+        }
+        .uñas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .Uñas__imagenes {
+                img {
+                    width: 200px;
+                    height: 200px;
+                    transition: 0.3s ease-in-out 0.2s;
+                }
+            }
+        }
+        .Uñas__imagenes img:hover {
+            transform: scale(1.3);
+        }
+    }
+    /*-----------------------------QUERY PAGES DE PRODUCTOS -------------------*/
+    .mainProductos{
+        margin-top: 20px;
+        // max-width: 700px;
+        .subProductos {
+            font-size: 1.4em;
+        }
+        .content_productos {
+            text-align: center;
+            border: 3px $rosa solid;
+            margin: 15px;
+            max-width: 500px;
+            figure {
+            display: flex;
+            align-items: center;
+            }
+        }
+    }
+    /*-----------------------------QUERY PAGES CONTACTOS -------------------*/
+    .container_contactos{
+        .titulo_contactos{
+            H6 {
+                font-size: 1.4em;
+            }
+        }
+    }
+        /*-----------------------------QUERY PAGES 404 ERROR -------------------*/
+    .body404 {
+        .container-error404 {
+            width: 300px;
+            font-size: 1em;
+            line-height: 1.7;
+            margin: 15px;
+            .link-404 {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+/*--------------------------------------------------------Segundo breakpoint----------------------------------------------------*/
+@media only screen and (min-width: 768px){
+    /*----------------QUERY CARROUSEL---------*/
+    header {
+        .d-block {
+            height: 350px;
+        }
+    }
+    /*----------------QUERY MAIN--------------------*/
+    main{
+        .mainIndexFlex{
+            display: flex;
+            justify-content: center;
+            figure {
+                .imagenesMainOne{
+                    width: 250px;
+                    height: 175px;
+                    border-radius: 5px 0px 0px 5px;
+                }
+                .imagenesMainTwo{
+                    width: 250px;
+                    height: 175px;
+                }
+                .imagenesMainThree{
+                    width: 250px;
+                    height: 175px;
+                    border-radius: 0px 5px 5px 0px;
+                }
+            }
+        }
+    }
+    /*------------------------QUERY ASIDE----------------------*/
+    aside{
+        .contentAside{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+            width: 720px;
+            hr {
+                width: 3px;
+                height: 100px;
+                background: linear-gradient(to bottom, red, blue, green);
+            }
+        }
+    }
+    /*------------------------QUERY SECCTION-------------------*/
+    .parrafo {
+        .parrafo__contenedor{
+            margin-top: 50px;
+            width: 100%;
+            div {
+                max-width: 250px;
+                margin: auto;
+                // border: solid black;
+            }
+        }
+    }
+}

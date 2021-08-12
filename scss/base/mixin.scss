@@ -1,0 +1,40 @@
+@mixin imagenes {
+    width: 100%;
+    width: 150px;
+    height: 100px;
+    border: solid white 3px;
+    transition: 0.3s ease-in-out 0.1s;
+}
+
+@mixin titulos {
+    width: 100%;
+    font-family: 'Josefin Sans';
+    color: $titulo;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin subtitulos {
+    width: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $titulo;
+}
+
+@mixin subtitulosh6 {
+    width: 100%;
+    font-family: 'Didact Gothic', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+@mixin parrafos {
+    letter-spacing: 1px;
+    font-family: 'MonteCarlo', cursive;
+    font-style: none;
+    text-decoration: justify;
+    text-align: justify;
+}

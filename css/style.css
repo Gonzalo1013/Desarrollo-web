@@ -1,0 +1,519 @@
+@charset "UTF-8";
+.bodyIndex {
+  background-color: #F2F4F3;
+  margin: auto;
+  max-width: 1000px; }
+
+/*------------------------------------------------------------ HEADER ---------------------------------------------------------*/
+.navegador {
+  position: sticky;
+  top: 0px;
+  width: 1000px;
+  z-index: 5; }
+  .navegador .navbar {
+    background: linear-gradient(to bottom, #ebd5b5, pink); }
+    .navegador .navbar .logo {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%; }
+    .navegador .navbar .navbar-nav .nav-item .nav-link {
+      text-decoration: none;
+      color: white;
+      font-family: "Bebas Neue", cursive;
+      padding: 0px 5px 0px 5px;
+      margin: auto;
+      margin: 0px 5px;
+      letter-spacing: 0.5px; }
+    .navegador .navbar .navbar-nav .nav-item .nav-link:hover {
+      background-color: #cfa9a9;
+      border-radius: 3px;
+      padding: 0px 5px; }
+
+.dropdown .dropdown-menu {
+  background-color: pink; }
+  .dropdown .dropdown-menu .dropdown-item {
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    padding: 0% 0% 0% 5px; }
+  .dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #cfa9a9; }
+
+header .content-logo {
+  text-align: center;
+  margin-top: 5px; }
+  header .content-logo .logo-principal {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%; }
+
+header .tituloIndex .titulo {
+  width: 100%;
+  font-family: 'Josefin Sans';
+  color: #383636;
+  text-align: center;
+  text-transform: uppercase; }
+
+header .tituloIndex .sub-titulo {
+  width: 100%;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #383636; }
+
+header .d-block {
+  height: 150px;
+  margin-top: 20px; }
+
+/*------------------------------------------------------------ MAIN -----------------------------------------------------------*/
+main .mainIndexFlex {
+  text-align: center;
+  margin-top: 40px; }
+  main .mainIndexFlex figure {
+    margin: 0%; }
+    main .mainIndexFlex figure .imagenesMainOne {
+      width: 100%;
+      width: 150px;
+      height: 100px;
+      border: solid white 3px;
+      transition: 0.3s ease-in-out 0.1s;
+      border-radius: 5px 5px 0px 0px; }
+    main .mainIndexFlex figure .imagenesMainTwo {
+      width: 100%;
+      width: 150px;
+      height: 100px;
+      border: solid white 3px;
+      transition: 0.3s ease-in-out 0.1s; }
+    main .mainIndexFlex figure .imagenesMainThree {
+      width: 100%;
+      width: 150px;
+      height: 100px;
+      border: solid white 3px;
+      transition: 0.3s ease-in-out 0.1s;
+      border-radius: 0px 0px 5px 5px; }
+
+.imagenesMainOne:hover {
+  transform: scale(1.2); }
+
+.imagenesMainTwo:hover {
+  transform: scale(1.2); }
+
+.imagenesMainThree:hover {
+  transform: scale(1.2); }
+
+/*------------------------------------------------------------ ASIDE ----------------------------------------------------------*/
+aside .contentAside {
+  margin-top: 30px; }
+  aside .contentAside .InvertiPagosRedes {
+    margin-top: 20px; }
+    aside .contentAside .InvertiPagosRedes .asideTitulos {
+      width: 100%;
+      font-family: 'Didact Gothic', sans-serif;
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: bold;
+      max-width: 200px;
+      margin: auto; }
+    aside .contentAside .InvertiPagosRedes p {
+      letter-spacing: 1px;
+      font-family: 'MonteCarlo', cursive;
+      font-style: none;
+      text-decoration: justify;
+      text-align: justify;
+      max-width: 200px;
+      margin: auto; }
+    aside .contentAside .InvertiPagosRedes .imagenMediosDePago {
+      text-align: center; }
+      aside .contentAside .InvertiPagosRedes .imagenMediosDePago img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px; }
+    aside .contentAside .InvertiPagosRedes .siguenosRedes {
+      display: flex;
+      justify-content: center; }
+      aside .contentAside .InvertiPagosRedes .siguenosRedes .redesLogo {
+        margin: 10px 10px;
+        width: 30px;
+        height: 30px; }
+  aside .contentAside hr {
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    margin-top: 20px;
+    border-style: none;
+    background: linear-gradient(to left, red, blue, green); }
+
+/*------------------------------------------------------------ SECTION --------------------------------------------------------*/
+.parrafo .parrafo__contenedor {
+  background-image: url(https://p1.pxfuel.com/preview/441/161/272/rose-background-beautiful-beauty.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no repeat;
+  text-align: center;
+  border: solid white 5px;
+  border-radius: 5px; }
+  .parrafo .parrafo__contenedor div {
+    max-width: 150px;
+    margin: auto; }
+  .parrafo .parrafo__contenedor .parrafo__pauConi {
+    margin-top: 20px;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: white;
+    border: solid #f1efef 3px;
+    border-radius: 5px;
+    position: relative; }
+  .parrafo .parrafo__contenedor .parrafo__juventud {
+    font-family: "Reem Kufi", sans-serif;
+    background-color: white;
+    border: solid #f1efef 3px;
+    border-radius: 5px;
+    position: relative; }
+  .parrafo .parrafo__contenedor .parrafo__nuestraHistoria {
+    letter-spacing: 1px;
+    font-family: 'MonteCarlo', cursive;
+    font-style: none;
+    text-decoration: justify;
+    text-align: justify;
+    background-color: white;
+    border: solid #f1efef 3px;
+    border-radius: 5px;
+    position: relative; }
+
+.parrafo__contenedor:before {
+  content: "";
+  padding: 0px 995px 500px 0px;
+  height: 50vh;
+  background: white;
+  opacity: 0.4;
+  border-radius: 4px; }
+
+/*------------------------------------------------------------ FOOTER ---------------------------------------------------------*/
+.footer {
+  font-family: sans-serif;
+  background-color: #202020;
+  width: 100%;
+  margin-top: 20px;
+  color: white; }
+  .footer .footer__col {
+    padding: 10px; }
+    .footer .footer__col h6 {
+      font-size: 0.8em; }
+    .footer .footer__col img {
+      height: 25px;
+      width: 25px;
+      background: white;
+      padding: 3px 5px;
+      border-radius: 3px; }
+    .footer .footer__col .content-label {
+      display: flex;
+      align-items: center;
+      margin-top: 5px; }
+      .footer .footer__col .content-label label {
+        margin-left: 15px;
+        color: grey;
+        max-width: 150px;
+        font-size: 0.6em; }
+
+.information {
+  padding: 10px;
+  background-color: #202020;
+  color: grey;
+  box-shadow: 2px 2px 5px grey;
+  font-size: 0.6em; }
+
+/*-------------------------------------------------------------Pages-Presios---------------------------------------------------*/
+.bodyPrecios {
+  margin: auto;
+  max-width: 1000px;
+  background-color: #F2F4F3; }
+  .bodyPrecios .titulo_precios {
+    text-align: center;
+    width: 100%;
+    font-family: 'Josefin Sans';
+    color: #383636;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px; }
+  .bodyPrecios .mainPrecios {
+    margin-top: 40px;
+    padding: 20px;
+    background-image: url(https://www.teahub.io/photos/full/14-145357_flower-background-wallpaper-hd-flower-background-design-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px 900px; }
+    .bodyPrecios .mainPrecios .tablaPrecios {
+      font-family: "MonteCarlo", cursive;
+      margin: auto; }
+      .bodyPrecios .mainPrecios .tablaPrecios thead {
+        border: solid #f1efef 4px;
+        margin-top: 20px; }
+        .bodyPrecios .mainPrecios .tablaPrecios thead .subtitulo_precios {
+          text-decoration: underline;
+          font-family: "Josefin Sans";
+          letter-spacing: 1px; }
+
+/*------------------------------------------------------------Page-Productos----------------------------------------------------*/
+.bodyProductos {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #F2F4F3; }
+  .bodyProductos .mainProductos {
+    margin-top: 30px; }
+    .bodyProductos .mainProductos .subProductos {
+      width: 100%;
+      font-family: 'Josefin Sans';
+      color: #383636;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 50px; }
+    .bodyProductos .mainProductos .content_left .content_productos {
+      text-align: center;
+      border: 3px pink solid;
+      margin: 15px; }
+      .bodyProductos .mainProductos .content_left .content_productos figure {
+        margin: 10px;
+        border: 5px white solid; }
+        .bodyProductos .mainProductos .content_left .content_productos figure .content_img {
+          margin: 10px; }
+          .bodyProductos .mainProductos .content_left .content_productos figure .content_img img {
+            width: 150px;
+            height: 150px; }
+        .bodyProductos .mainProductos .content_left .content_productos figure figcaption {
+          letter-spacing: 1px;
+          font-family: 'MonteCarlo', cursive;
+          font-style: none;
+          text-decoration: justify;
+          text-align: justify;
+          margin: 10px;
+          padding: 20px;
+          text-justify: distribute;
+          background-color: white; }
+    .bodyProductos .mainProductos .content_right {
+      display: flex;
+      flex-direction: row-reverse; }
+      .bodyProductos .mainProductos .content_right .content_productos {
+        text-align: center;
+        border: 3px pink solid;
+        margin: 15px; }
+        .bodyProductos .mainProductos .content_right .content_productos figure {
+          margin: 10px;
+          border: 5px white solid; }
+          .bodyProductos .mainProductos .content_right .content_productos figure .content_img {
+            margin: 10px; }
+            .bodyProductos .mainProductos .content_right .content_productos figure .content_img img {
+              width: 150px;
+              height: 150px; }
+          .bodyProductos .mainProductos .content_right .content_productos figure figcaption {
+            letter-spacing: 1px;
+            font-family: 'MonteCarlo', cursive;
+            font-style: none;
+            text-decoration: justify;
+            text-align: justify;
+            margin: 10px;
+            padding: 20px;
+            text-justify: distribute;
+            background-color: white; }
+
+/*------------------------------------------------------------Page-Contactos----------------------------------------------------*/
+.bodyContactos {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #F2F4F3; }
+  .bodyContactos .container_contactos {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border: solid pink; }
+    .bodyContactos .container_contactos .titulo_contactos {
+      width: 100%;
+      font-family: 'Josefin Sans';
+      color: #383636;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 10px; }
+    .bodyContactos .container_contactos .form_contactos {
+      font-family: "Josefin Sans";
+      padding: 10px;
+      background-color: white;
+      margin: 10px; }
+      .bodyContactos .container_contactos .form_contactos .form-label {
+        font-size: 0.7em;
+        text-align: center; }
+      .bodyContactos .container_contactos .form_contactos .form-control {
+        font-size: 0.7em; }
+      .bodyContactos .container_contactos .form_contactos .form-select {
+        font-size: 0.7em; }
+      .bodyContactos .container_contactos .form_contactos .form-check {
+        font-size: 0.7em; }
+      .bodyContactos .container_contactos .form_contactos .boton_btn {
+        text-align: center; }
+        .bodyContactos .container_contactos .form_contactos .boton_btn .btn {
+          font-size: 0.7em; }
+
+/*-----------------------------------------------------Page-Uñas-Pestañas-Peluqueria-----------------------------------------------*/
+.mainTrabajos {
+  margin-top: 30px; }
+  .mainTrabajos .titulo-trabajos h6 {
+    width: 100%;
+    font-family: 'Josefin Sans';
+    color: #383636;
+    text-align: center;
+    text-transform: uppercase; }
+  .mainTrabajos .uñas .Uñas__imagenes {
+    margin: 15px;
+    text-align: center; }
+    .mainTrabajos .uñas .Uñas__imagenes img {
+      width: 200px;
+      height: 200px;
+      border: solid white 4px;
+      box-shadow: pink 2px 2px 5px; }
+
+/* -------------------------------------------------------------ERROR-404---------------------------------------------------------*/
+.body404 {
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .body404 .container-error404 {
+    text-align: center;
+    width: 200px;
+    background-color: #F2F4F3;
+    padding: 15px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 0.7em;
+    line-height: 1.7;
+    margin: 10px; }
+    .body404 .container-error404 .link-404 {
+      display: inline-block;
+      background-color: blue;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px; }
+
+/*--------------------------------------------------------- MEDIA QUERIS -------------------------------------------------------------*/
+@media only screen and (min-width: 576px) {
+  /*-------------------------------QUERY CARROUSEL------------------------*/
+  header .d-block {
+    height: 300px; }
+  /*---------------------------------QUERY MAIN---------------------------*/
+  main .mainIndexFlex figure .imagenesMainOne {
+    width: 200px;
+    height: 150px; }
+  main .mainIndexFlex figure .imagenesMainTwo {
+    width: 200px;
+    height: 150px; }
+  main .mainIndexFlex figure .imagenesMainThree {
+    width: 200px;
+    height: 150px; }
+  /*-------------------------------QUERY SECCTION--------------------------*/
+  .parrafo .parrafo__contenedor {
+    width: 100%; }
+    .parrafo .parrafo__contenedor div {
+      max-width: 250px;
+      margin: auto; }
+    .parrafo .parrafo__contenedor .parrafo__pauConi {
+      padding: 10px; }
+    .parrafo .parrafo__contenedor .parrafo__juventud {
+      padding: 10px; }
+    .parrafo .parrafo__contenedor .parrafo__nuestraHistoria {
+      padding: 10px; }
+  .parrafo__contenedor:before {
+    content: "";
+    padding: 0px 995px 400px 0px; }
+  /*------------------------------QUERY FOOTER-------------------------------*/
+  .footer {
+    display: flex;
+    justify-content: space-evenly; }
+  .information {
+    display: flex;
+    justify-content: space-between; }
+  /*--------------------------QUERY PAGE PRECIOS ----------------------------*/
+  .bodyPrecios .titulo_precios h6 {
+    font-size: 1.4em; }
+  .bodyPrecios .mainPrecios .tablaPrecios {
+    display: flex;
+    justify-content: space-evenly; }
+  /*-----------------------------QUERY PAGES DE TRABAJOS -------------------*/
+  .mainTrabajos .titulo-trabajos h6 {
+    font-size: 1.4em; }
+  .mainTrabajos .uñas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mainTrabajos .uñas .Uñas__imagenes img {
+      width: 200px;
+      height: 200px;
+      transition: 0.3s ease-in-out 0.2s; }
+  .mainTrabajos .Uñas__imagenes img:hover {
+    transform: scale(1.3); }
+  /*-----------------------------QUERY PAGES DE PRODUCTOS -------------------*/
+  .mainProductos {
+    margin-top: 20px; }
+    .mainProductos .subProductos {
+      font-size: 1.4em; }
+    .mainProductos .content_productos {
+      text-align: center;
+      border: 3px pink solid;
+      margin: 15px;
+      max-width: 500px; }
+      .mainProductos .content_productos figure {
+        display: flex;
+        align-items: center; }
+  /*-----------------------------QUERY PAGES CONTACTOS -------------------*/
+  .container_contactos .titulo_contactos H6 {
+    font-size: 1.4em; }
+  /*-----------------------------QUERY PAGES 404 ERROR -------------------*/
+  .body404 .container-error404 {
+    width: 300px;
+    font-size: 1em;
+    line-height: 1.7;
+    margin: 15px; }
+    .body404 .container-error404 .link-404 {
+      margin-top: 10px; } }
+
+/*--------------------------------------------------------Segundo breakpoint----------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  /*----------------QUERY CARROUSEL---------*/
+  header .d-block {
+    height: 350px; }
+  /*----------------QUERY MAIN--------------------*/
+  main .mainIndexFlex {
+    display: flex;
+    justify-content: center; }
+    main .mainIndexFlex figure .imagenesMainOne {
+      width: 250px;
+      height: 175px;
+      border-radius: 5px 0px 0px 5px; }
+    main .mainIndexFlex figure .imagenesMainTwo {
+      width: 250px;
+      height: 175px; }
+    main .mainIndexFlex figure .imagenesMainThree {
+      width: 250px;
+      height: 175px;
+      border-radius: 0px 5px 5px 0px; }
+  /*------------------------QUERY ASIDE----------------------*/
+  aside .contentAside {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 720px; }
+    aside .contentAside hr {
+      width: 3px;
+      height: 100px;
+      background: linear-gradient(to bottom, red, blue, green); }
+  /*------------------------QUERY SECCTION-------------------*/
+  .parrafo .parrafo__contenedor {
+    margin-top: 50px;
+    width: 100%; }
+    .parrafo .parrafo__contenedor div {
+      max-width: 250px;
+      margin: auto; } }
