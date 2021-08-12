@@ -261,14 +261,18 @@ aside {
         margin-top: 40px;
         padding: 20px;
         background-image: url(https://www.teahub.io/photos/full/14-145357_flower-background-wallpaper-hd-flower-background-design-hd.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: 1000px 900px;
         .tablaPrecios{
+            display: flex;
+            flex-direction: column;
             font-family: $Monte;
             margin: auto;
+            // border: solid black;
             thead{
                 border: solid $borde 4px;
-                margin-top: 20px;
+                margin-top: 5px;
                 .subtitulo_precios{
                     text-decoration: underline;
                     font-family: $josefin;
@@ -512,6 +516,7 @@ aside {
         .mainPrecios{
             .tablaPrecios{
                 display: flex;
+                flex-direction: row;
                 justify-content: space-evenly;
             }
         }    

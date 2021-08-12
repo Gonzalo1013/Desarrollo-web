@@ -242,14 +242,17 @@ aside .contentAside {
     margin-top: 40px;
     padding: 20px;
     background-image: url(https://www.teahub.io/photos/full/14-145357_flower-background-wallpaper-hd-flower-background-design-hd.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 1000px 900px; }
     .bodyPrecios .mainPrecios .tablaPrecios {
+      display: flex;
+      flex-direction: column;
       font-family: "MonteCarlo", cursive;
       margin: auto; }
       .bodyPrecios .mainPrecios .tablaPrecios thead {
         border: solid #f1efef 4px;
-        margin-top: 20px; }
+        margin-top: 5px; }
         .bodyPrecios .mainPrecios .tablaPrecios thead .subtitulo_precios {
           text-decoration: underline;
           font-family: "Josefin Sans";
@@ -440,6 +443,7 @@ aside .contentAside {
     font-size: 1.4em; }
   .bodyPrecios .mainPrecios .tablaPrecios {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly; }
   /*-----------------------------QUERY PAGES DE TRABAJOS -------------------*/
   .mainTrabajos .titulo-trabajos h6 {
